@@ -9,15 +9,14 @@ Uses free [freegeoip.app](https://freegeoip.app) API to convert user IP to count
 @author  [Yes We Web](https://www.yesweweb.com/)
 
 ## Setup
-You need to create a textual files file containing all the ad codes (tags, images, iframes, ...) in a new line which should be separated by tilde (`~`). Codes in *default* files will be delivered to any country.
+You need to create a textual file for each ad size containing all ads codes (tags, images, iframes, ...) in a new line which should be separated by tilde (`~`). Codes in *default* files will be delivered to any country.
 
-Example of naming convention for ad code files:
+Example of naming conventions for ad code files (It uses ISO Alpha-2 (2 letter code) to identify countries):
 |Filename |Description|
 |--|--|
 |`ad_default_300x250.txt`|contains *default* ads (displayed in any country) in 300x250 format|
-|`ad_IT_300x250.txt`|contains ads for Italian users in 300x250 format            |
-|`ad_ES_728x90.txt`|contains ads for Spanish users in 728x90 format|
-It uses ISO Alpha-2 (2 letter code) to identify countries.
+|`ad_IT_300x250.txt`|contains ads for users in Italy in 300x250 format|
+|`ad_ES_728x90.txt`|contains ads for users in Spain in 728x90 format|
 
 In your code you need to include the **GeoAdRotator** and initialize it:
 `require_once (__DIR__ . "/GeoAdRotator/GeoAdRotator.php");`
