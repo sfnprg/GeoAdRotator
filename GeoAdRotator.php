@@ -4,14 +4,16 @@
  * A simple ad server/rotator with geotargeting functionalities based on user IP address.
  * Uses free freegeoip.app API to convert IP to Geo.
  * 
- * Need to create a textual files file containing all the codes which should be separated by tilde (~). Codes in default files will be delivered to any country.
+ * You need to create a textual file for each ad size containing all ads codes separated by tilde (~). Codes in default files will be delivered to any country.
  * e.g. ad_default_300x250.txt -> contains "default" ads in 300x250 format
- *     ad_IT_300x250.txt -> contains ads for Italian users in 300x250 format
+ *      ad_IT_300x250.txt -> contains ads for users in Italy in 300x250 format
+ *      ad_ES_300x250.txt -> contains ads for users in Spain in 300x250 format
+ *      ad_default_300x600.txt -> contains "default" ads in 300x600 format
  * 
  * @author Yes We Web < www.yesweweb.com >
  */
  
-const VERSION = "0.0.1";
+const VERSION = "0.0.1"; //BETA version!
 
 class GeoAdRotator {
 	
